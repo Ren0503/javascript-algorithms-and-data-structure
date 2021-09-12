@@ -18,16 +18,16 @@ Cấu trúc dữ liệu là một phương thức tổ chức và lưu trữ d�
 * `B` [Queue](src/data-structures/queue)
 * `B` [Stack](src/data-structures/stack)
 * `B` [Hash Table](src/data-structures/hash-table)
-* `B` [Heap](src/data-structures/heap) - max and min heap versions
+* `B` [Heap](src/data-structures/heap) 
 * `B` [Priority Queue](src/data-structures/priority-queue)
 * `A` [Trie](src/data-structures/trie)
 * `A` [Tree](src/data-structures/tree)
   * `A` [Binary Search Tree](src/data-structures/tree/binary-search-tree)
   * `A` [AVL Tree](src/data-structures/tree/avl-tree)
   * `A` [Red-Black Tree](src/data-structures/tree/red-black-tree)
-  * `A` [Segment Tree](src/data-structures/tree/segment-tree) - with min/max/sum range queries examples
-  * `A` [Fenwick Tree](src/data-structures/tree/fenwick-tree) (Binary Indexed Tree)
-* `A` [Graph](src/data-structures/graph) (both directed and undirected)
+  * `A` [Segment Tree](src/data-structures/tree/segment-tree) 
+  * `A` [Fenwick Tree](src/data-structures/tree/fenwick-tree) 
+* `A` [Graph](src/data-structures/graph) 
 * `A` [Disjoint Set](src/data-structures/disjoint-set)
 * `A` [Bloom Filter](src/data-structures/bloom-filter)
 
