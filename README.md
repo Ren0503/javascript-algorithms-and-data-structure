@@ -1,4 +1,4 @@
-# Cấu Trúc Dữ Liệu & Giải Thuật với JS
+# Cấu Trúc Dữ Liệu & Giải Thuật với JavaScript
 
 [![CI](https://github.com/trekhleb/javascript-algorithms/workflows/CI/badge.svg)](https://github.com/trekhleb/javascript-algorithms/actions?query=workflow%3ACI+branch%3Amaster)
 [![codecov](https://codecov.io/gh/trekhleb/javascript-algorithms/branch/master/graph/badge.svg)](https://codecov.io/gh/trekhleb/javascript-algorithms)

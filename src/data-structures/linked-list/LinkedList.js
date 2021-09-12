@@ -24,7 +24,7 @@ export default class LinkedList {
         const newNode = new LinkedListNode(value, this.head);
         this.head = newNode;
 
-        // Nếu vẫn chưa có tail thì tạo nút mới thành tail.
+        // Nếu vẫn chưa có tail thì nút mới sẽ thành tail.
         if (!this.tail) {
             this.tail = newNode;
         }
@@ -175,7 +175,7 @@ export default class LinkedList {
     }
 
     /**
-     * @param {*[]} values -Mảng giá trị cần chuyển thành danh sách liên kết.
+     * @param {*[]} values - Mảng giá trị cần chuyển thành danh sách liên kết.
      * @return {LinkedList}
      */
     fromArray(values) {
@@ -220,7 +220,7 @@ export default class LinkedList {
             // Nơi lưu trữ nút kế tiếp.
             nextNode = currNode.next;
 
-            // Thay đổi nút kế tiếp của nút hiện tại để nó liên kết với nút trước đó.
+            // Thay đổi tham chiếu kế tiếp của nút hiện tại để nó liên kết với nút trước đó.
             currNode.next = prevNode;
 
             // Dịch chuyển nút prevNode và currNode về trước một bước.
