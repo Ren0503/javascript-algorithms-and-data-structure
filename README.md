@@ -50,7 +50,7 @@ Thuật toán là một đặc tả rõ ràng về cách giải quyết một l�
   * `B` [Euclidean Algorithm](src/algorithms/math/euclidean-algorithm) - tìm ước số chung lớn nhất (GCD)
   * `B` [Least Common Multiple](src/algorithms/math/least-common-multiple) - tìm bội số chung nhỏ nhất (LCM)
   * `B` [Sieve of Eratosthenes](src/algorithms/math/sieve-of-eratosthenes) - tìm tất cả số nguyên tố theo giới hạn được đưa.
-  * `B` [Is Power of Two](src/algorithms/math/is-power-of-two) - kiểm tra một số có phải bình phương của 2 (dương lẫn âm).
+  * `B` [Is Power of Two](src/algorithms/math/is-power-of-two) - kiểm tra một số có phải luỹ thừa của 2.
   * `B` [Pascal's Triangle](src/algorithms/math/pascal-triangle) - tam giác Pascal.
   * `B` [Complex Number](src/algorithms/math/complex-number) - số phức và các phép toán cơ bản.
   * `B` [Radian & Degree](src/algorithms/math/radian) - chuyển từ radian sang độ và ngược lại.
