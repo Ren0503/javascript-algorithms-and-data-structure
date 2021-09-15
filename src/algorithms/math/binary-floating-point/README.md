@@ -1,8 +1,8 @@
 # Biểu diễn số nhị phân của dấu phẩy động
 
-Bạn đã bao giờ tự hỏi làm thế nào mà máy tính lưu trữ những số dấu phẩy động như `3.1416` (𝝿) hoặc `9.109 × 10⁻³¹` (khối lượng của electron) trong bộ nhớ bị giới hạn bởi một số lượng hữu hạn của 0 và 1 (bits)?
+Đã bao giờ bạn tự hỏi làm thế nào mà máy tính có thể lưu trữ những số dấu phẩy động như `3.1416` (𝝿) hoặc `9.109 × 10⁻³¹` (khối lượng của electron) trong bộ nhớ bị giới hạn bởi một số lượng hữu hạn của 0 và 1 (bits) chưa?
 
-Nó có thể lưu trữ đơn giản với các số nguyên(ví dụ như :17). Giả sử ta có 16 bit(2 bytes) để lưu trữ một số. Với 16 bit đấy ta có thể lưu một dãy số nguyên từ `[0, 65535]`:
+Nó có thể lưu trữ dễ dàng với các số nguyên (ví dụ như 17). Giả sử ta có 16 bit(2 bytes) để lưu trữ một số. Thì với 16 bit đấy ta có thể lưu một dãy số nguyên từ `[0, 65535]`:
 
 ```text
 (0000000000000000)₂ = (0)₁₀
@@ -33,11 +33,11 @@ Nó có thể lưu trữ đơn giản với các số nguyên(ví dụ như :17)
     (1 × 2⁰) = (65535)₁₀
 ```
 
-Nếu là số nguyên có dấu ta sử dụng phương pháp [bù 2](https://en.wikipedia.org/wiki/Two%27s_complement) và dịch đoạn `[0, 65535]` về phần âm, với 16 bit ta có được đoạn số mới `[-32768, +32767]`.
+Trong trường hợp số nguyên có dấu ta sử dụng phương pháp [bù 2](https://en.wikipedia.org/wiki/Two%27s_complement) và dịch đoạn `[0, 65535]` về phần âm, với 16 bit ta có được đoạn số mới `[-32768, +32767]`.
 
-Như bạn thấy, cách tiếp cận này sẽ không cho phép biểu diễn một số như `27.15625` (các số sau dấu thập phân sẽ bị bỏ qua).
+Như bạn đã thấy, cách tiếp cận này sẽ không cho phép biểu diễn một số phẩy động như `27.15625` (các số sau dấu thập phân sẽ bị bỏ qua).
 
-Tuy nhiên, chúng ta không phải là những người đầu tiên nhận thấy vấn đề này. Khoảng 36 năm trước, một số người thông minh đã khắc phục hạn chế này bằng cách giới thiệu tiêu chuẩn [IEEE 754](https://en.wikipedia.org/wiki/IEEE_754) cho số dấu phẩy động.
+Tuy nhiên, chúng ta không phải là những người đầu tiên nhận thấy vấn đề này. Khoảng 36 năm trước, một số người thông minh đã khắc phục hạn chế trên bằng cách giới thiệu tiêu chuẩn [IEEE 754](https://en.wikipedia.org/wiki/IEEE_754) cho số dấu phẩy động.
 
 Tiêu chuẩn IEEE 754 mô tả cách sử dụng 16 bit (hoặc 32, 64 bit) để lưu trữ các số có phạm vi rộng hơn, bao gồm các số dấu phẩy động nhỏ (nhỏ hơn 1 và gần hơn 0).
 
