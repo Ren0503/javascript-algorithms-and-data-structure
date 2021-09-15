@@ -39,9 +39,9 @@ Như bạn đã thấy, cách tiếp cận này sẽ không cho phép biểu di�
 
 Tuy nhiên, chúng ta không phải là những người đầu tiên nhận thấy vấn đề này. Khoảng 36 năm trước, một số người thông minh đã khắc phục hạn chế trên bằng cách giới thiệu tiêu chuẩn [IEEE 754](https://en.wikipedia.org/wiki/IEEE_754) cho số dấu phẩy động.
 
-Tiêu chuẩn IEEE 754 mô tả cách sử dụng 16 bit (hoặc 32, 64 bit) để lưu trữ các số có phạm vi rộng hơn, bao gồm các số dấu phẩy động nhỏ (nhỏ hơn 1 và gần hơn 0).
+Tiêu chuẩn IEEE 754 mô tả cách sử dụng 16 bit (hoặc 32, 64 bit) để lưu trữ các số có phạm vi rộng hơn, bao gồm các số dấu phẩy động nhỏ (nhỏ hơn 1 và lớn  hơn 0).
 
-Để hiểu ý tưởng đằng sau tiêu chuẩn, ta sẽ nhắc lại [ký hiệu khoa học](https://en.wikipedia.org/wiki/Scientific_notation) - một cách thể hiện các số quá lớn hoặc quá nhỏ (thường sẽ dẫn đến chuỗi rất dài các chữ số) để được viết thuận tiện ở dạng thập phân.
+Để hiểu ý tưởng đằng sau tiêu chuẩn, ta sẽ nhắc lại khái niệm [ký hiệu khoa học](https://en.wikipedia.org/wiki/Scientific_notation) - một cách thể hiện các số quá lớn hoặc quá nhỏ (thường sẽ dẫn đến chuỗi rất dài các chữ số), để viết thuận tiện các số phẩy động ở dạng thập phân.
 
 ![Scientific number notation](images/03-scientific-notation.png)
 
@@ -52,7 +52,7 @@ Nhìn vào ảnh ta thấy, con số biểu diễn được chia làm 3 phần :
 
 Phần **base** không được đề cập đến, ta sẽ đồng thuận với nhau rằng nó luôn có giá trị bằng `2`.
 
-Thay vì sử dụng tất cả 16 bit (hoặc 32 bit hoặc 64 bit) để lưu trữ phần số, chúng ta có thể chia sẻ các bit và lưu trữ một dấu hiệu, số mũ và phân số cùng một lúc. Tùy thuộc vào số lượng bit mà chúng ta sẽ sử dụng để lưu trữ số mà chúng ta kết thúc bằng các phần tách sau:
+Thay vì sử dụng tất cả 16 bit (hoặc 32 bit hoặc 64 bit) để lưu trữ phần số, chúng ta có thể chia sẻ các bit và lưu trữ dấu, phần số mũ và phần định trị cùng một lúc. Tùy thuộc vào số lượng bit mà chúng ta sẽ sử dụng để lưu trữ mà chúng ta kết thúc bằng các phần tách sau:
 
 | Floating-point format | Total bits | Sign bits | Exponent bits | Fraction bits | Base |
 | :-------------------- | :--------: | :-------: | :-----------: | :--------------: | :--: |
