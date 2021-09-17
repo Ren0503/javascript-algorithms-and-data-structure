@@ -1,8 +1,8 @@
-# Thuật toán Euclidean
+# Thuật toán Euclid
 
-Trong toán học, thuật toán Euclidean hay Euclid's, là một phương pháp hiệu quả để tính ước chung lớn nhất (GCD) của hai số, GCD của hai số là số lớn nhất mà cả hai cùng chia hết hay chia không có phần dư.
+Trong toán học, thuật toán Euclid hay Euclid's, là một phương pháp hiệu quả để tính ước chung lớn nhất (GCD) của hai số, GCD của hai số là số lớn nhất mà cả hai cùng chia hết hay chia không có phần dư.
 
-Thuật toán Euclidean được xây dựng dựa trên nguyên tắc ước chung lớn nhất của hai số không thay đổi, nếu số lớn hơn được thay thế bởi hiệu số của nó với số nhỏ hơn. Ví dụ, `21` là GCD của `252` và `147` (vì `252 = 21 × 12` và `147 = 21 × 7`) đồng thời `21` cũng là GCD của `147` và `105 = 252 − 147`.
+Thuật toán Euclid được xây dựng dựa trên nguyên tắc ước chung lớn nhất của hai số không thay đổi, nếu số lớn hơn được thay thế bởi hiệu số của nó với số nhỏ hơn. Ví dụ, `21` là GCD của `252` và `147` (vì `252 = 21 × 12` và `147 = 21 × 7`) đồng thời `21` cũng là GCD của `147` và `105 = 252 − 147`.
 Vì sự thay đổi này sẽ làm cho số lớn hơn thành số nhỏ hơn, nên quá trình này sẽ lặp lại cho đến khi nào hai số bằng nhau. Khi đó, chúng sẽ là GCD của hai số ban đầu.
 
 Bằng cách đảo ngược các bước, GCD có thể được biểu thị dưới dạng tổng của hai số ban đầu, mỗi số nhân với một số nguyên dương hoặc âm, ví dụ: `21 = 7 × 147 + (−4) × 252`. GCD thể hiện theo cách này được gọi là bổ đề Bézout.
