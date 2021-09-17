@@ -1,6 +1,6 @@
 # Danh sách liên kết
 
-Trong khoa học máy tính, **danh sách liên kết** là một tập hợp tuyết tính của các phần tử dữ liệu, trong đó thứ tự tuyến tính của nó không được cung cấp bởi địa chỉ vật lý trong bộ nhớ, thay vào đó, mỗi phần tử sẽ trỏ đến địa chỉ của phần tử kế tiếp. Nó là một cấu trúc dữ liệu bao gồm một nhóm các nút cùng đại diện cho một chuỗi. Ở dạng đơn giản nhất, mỗi nút bao gồm hai phần là dữ liệu và tham chiếu(cũng có thể nói là một liên kết) đến nút kế tiếp trong chuỗi. Cấu trúc này cho phép chèn hoặc loại bỏ các phần tử từ bất kỳ vị trí nào của chuỗi trong quá trình lặp lại. Các dạng phức tạp hơn thêm các liên kết bổ sung cho phép ta thêm hay xoá các phần tử tham chiếu tuỳ ý. 
+Trong khoa học máy tính, **danh sách liên kết** là một tập hợp tuyết tính của các phần tử dữ liệu, trong đó thứ tự tuyến tính của nó không được cung cấp bởi địa chỉ vật lý trong bộ nhớ, thay vào đó, mỗi phần tử sẽ trỏ đến địa chỉ của phần tử kế tiếp. Nó là một cấu trúc dữ liệu bao gồm một nhóm các nút cùng đại diện cho một chuỗi. Ở dạng đơn giản nhất, mỗi nút bao gồm hai phần là dữ liệu và tham chiếu(cũng có thể nói là một liên kết) đến nút kế tiếp trong chuỗi. Cấu trúc này cho phép chèn hoặc loại bỏ các phần tử ở bất kỳ vị trí nào của chuỗi bằng cách dùng vòng lặp. Các dạng phức tạp hơn thêm các liên kết bổ sung cho phép ta thêm hay xoá các phần tử tham chiếu tuỳ ý. 
 Một hạn chế của danh sách liên kết là buộc phải duyệt tuyến tính. Việc truy cập ngẫu nhiên là bất khả thi, thế nên khi so sánh với mảng có bộ nhớ cache, thì danh sách liên kết không tối ưu bằng.
 
 ![Linked List](https://upload.wikimedia.org/wikipedia/commons/6/6d/Singly-linked-list.svg)
@@ -44,7 +44,7 @@ ReverseTraversal(head, tail)
 end ReverseTraversal
 ```
 
-Diễn giải : ở đây ta sử dụng hai vòng lặp lồng nhau, ở vòng lớn ta dùng nút curr bắt đầu từ tail, nếu curr khác head thì tạo một vòng lặp nhỏ bên trong bắt đầu từ head với nút prev. Nếu nút sau prev khác curr thì từ prev ta trỏ đến nút kế tiếp đến khi bằng thì hiển thị giá trị curr. Sau đó curr sẽ được gán bằng prev và được hiển thị lần nữa ngoài vòng lặp. Đơn giản là sau mỗi vòng lặp lớn ta thực hiện xuất hai giá trị.
+Diễn giải : ở đây ta sử dụng hai vòng lặp lồng nhau, ở vòng lớn ta dùng nút curr bắt đầu từ tail, nếu curr khác head thì tạo một vòng lặp nhỏ bên trong bắt đầu từ head với nút prev. Nếu nút sau prev khác curr thì từ prev ta trỏ đến nút kế tiếp đến khi bằng thì hiển thị giá trị curr. Sau đó curr sẽ được gán bằng prev và được hiển thị lần nữa ngoài vòng lặp. Nói đơn giản là sau mỗi vòng lặp lớn ta thực hiện xuất hai giá trị.
 
 ### Thêm vào
 * Input: giá trị cần thêm vào danh sách
@@ -79,11 +79,11 @@ Prepend(value)
 end Prepend
 ```
 
-Diễn giải : n là một nút với phần dữ liệu và value, phần con trỏ lúc này sẽ trỏ đến head - do hiện tại danh sách không có phần tử nào trỏ đến head. Và lúc này n sẽ trở thành đầu tử đầu tiên của danh sách. Nếu danh sách rỗng thì n cũng là phần tử cuối cùng của danh sách.
+Diễn giải : n là một nút với phần dữ liệu là value, phần con trỏ lúc này sẽ trỏ đến head - do hiện tại danh sách không có phần tử nào trỏ đến head. Và lúc này n sẽ trở thành đầu tử đầu tiên của danh sách. Nếu danh sách rỗng thì n cũng là phần tử cuối cùng của danh sách.
 
 ### Tìm kiếm
 * Input: head hay nút đầu tiên của danh sách & giá trị cần tìm kiếm.
-* Output: nút mang giá trị tìm kiếm nếu có trả về true, không trả về false.
+* Output: nút mang giá trị tìm kiếm nếu có trả về true, không thì trả về false.
 
 ```text
 Contains(head, value)
@@ -98,11 +98,11 @@ Contains(head, value)
 end Contains
 ```
 
-Diễn giải : n là một nút với để duyệt danh sách liên kết, thực hiện vòng lặp qua các nút, chỉ dừng khi giá trị cần tìm bằng với giá trị của một nút nào đó hoặc đã hết danh sách. Nếu sau quá trình duyệt mà nút vẫn còn giá trị tức là nó chưa chạy tới hết danh sách thì giá trị đó có trong danh sách liên kết => true. Nếu nút n thành null tức là đã đi hết danh sách đồng nghĩa không có giá trị cần tìm báo false.
+Diễn giải : n là một nút để duyệt danh sách liên kết, thực hiện vòng lặp qua các nút, chỉ dừng lai khi giá trị cần tìm bằng với giá trị của một nút nào đó hoặc đã hết danh sách. Nếu sau quá trình duyệt mà nút có giá trị tức là nó chưa chạy tới hết danh sách thì giá trị đó có trong danh sách liên kết => true. Nếu nút n thành null tức là đã đi hết danh sách đồng nghĩa không có giá trị cần tìm báo false.
 
 ### Xoá nút
 * Input: head hay nút đầu tiên danh sách và giá trị cần xoá khỏi danh sách
-* Output: giá trị đã bị xoá báo true, nếu không được báo false.
+* Output: giá trị đã bị xoá báo true, nếu không xoá được báo false.
 
 ```text
 Remove(head, value)
@@ -134,7 +134,7 @@ Remove(head, value)
 end Remove
 ```
 
-Diễn giải : điều đầu tiên cần làm là xác định vị trí của dữ liệu cần xoá, nếu nó nằm ở head thì rất đơn giản, chỉ cần chuyển head về vị trí thứ hai. Nếu nó không nằm ở đầu tiến hành duyệt đến khi tới vị trí kề vị trí cần xoá. Nếu vị trí cần xoá là tail thì chỉ việc gán vị trị hiện tại là tail. Còn không thì trỏ đến nút sau nút cần xoá. Nếu tất cả các bước trên điều không hoạt động thì báo false.
+Diễn giải : điều đầu tiên cần làm là xác định vị trí của dữ liệu cần xoá, nếu nó nằm ở head thì rất đơn giản, chỉ cần chuyển head về vị trí thứ hai. Nếu nó không nằm ở head tiến hành duyệt đến khi tới vị trí kề vị trí cần xoá. Nếu vị trí cần xoá là tail thì chỉ việc gán vị trị hiện tại là tail. Còn không thì trỏ đến vị trí sau vị trí cần xoá. Nếu tất cả các bước trên điều không hoạt động thì báo false.
 
 ## Độ phức tạp
 

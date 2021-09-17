@@ -41,7 +41,7 @@ Thuật toán là một đặc tả rõ ràng về cách giải quyết một l�
 ### Algorithms by Topic
 
 * **Các phép toán (Math)**
-  * `B` [Bit Manipulation](src/algorithms/math/bits) - đặt/lấy/cập nhật/xoá bit, nhân/chia hai bit, tạo bit âm etc.
+  * `B` [Bit Manipulation](src/algorithms/math/bits) - set/get/cập nhật/xoá bit, nhân/chia hai bit, tạo bit âm etc.
   * `B` [Binary Floating Point](src/algorithms/math/binary-floating-point) - biểu diễn nhị phân của dấu phẩy động.
   * `B` [Factorial](src/algorithms/math/factorial)
   * `B` [Fibonacci Number](src/algorithms/math/fibonacci) - dạng cổ điển và dạng đóng
@@ -49,7 +49,7 @@ Thuật toán là một đặc tả rõ ràng về cách giải quyết một l�
   * `B` [Primality Test](src/algorithms/math/primality-test) (phương pháp phân chia thử nghiệm)
   * `B` [Euclidean Algorithm](src/algorithms/math/euclidean-algorithm) - tìm ước số chung lớn nhất (GCD)
   * `B` [Least Common Multiple](src/algorithms/math/least-common-multiple) - tìm bội số chung nhỏ nhất (LCM)
-  * `B` [Sieve of Eratosthenes](src/algorithms/math/sieve-of-eratosthenes) - tìm tất cả số nguyên tố theo giới hạn được đưa.
+  * `B` [Sieve of Eratosthenes](src/algorithms/math/sieve-of-eratosthenes) - tìm tất cả số nguyên tố trong giới hạn được cho.
   * `B` [Is Power of Two](src/algorithms/math/is-power-of-two) - kiểm tra một số có phải luỹ thừa của 2.
   * `B` [Pascal's Triangle](src/algorithms/math/pascal-triangle) - tam giác Pascal.
   * `B` [Complex Number](src/algorithms/math/complex-number) - số phức và các phép toán cơ bản.
@@ -65,9 +65,9 @@ Thuật toán là một đặc tả rõ ràng về cách giải quyết một l�
 * **Thiết lập (Sets)**
   * `B` [Cartesian Product](src/algorithms/sets/cartesian-product) - tích Descartes.
   * `B` [Fisher–Yates Shuffle](src/algorithms/sets/fisher-yates) - thuật toán ngẫu nhiên không trùng.
-  * `A` [Power Set](src/algorithms/sets/power-set) - tất cả các tập hợp con của một tập hợp (dùng phương pháp bit và quay lùi)
-  * `A` [Permutations](src/algorithms/sets/permutations) (sử dụng vòng lặp và không sử dụng)
-  * `A` [Combinations](src/algorithms/sets/combinations) (sử dụng vòng lặp và không sử dụng)
+  * `A` [Power Set](src/algorithms/sets/power-set) - tất cả các tập hợp con của một tập hợp (dùng phương pháp quay lùi)
+  * `A` [Permutations](src/algorithms/sets/permutations) (sử dụng và không sử dụng vòng lặp)
+  * `A` [Combinations](src/algorithms/sets/combinations) (sử dụng và không sử dụng vòng lặp)
   * `A` [Longest Common Subsequence](src/algorithms/sets/longest-common-subsequence) (LCS)
   * `A` [Longest Increasing Subsequence](src/algorithms/sets/longest-increasing-subsequence)
   * `A` [Shortest Common Supersequence](src/algorithms/sets/shortest-common-supersequence) (SCS)
@@ -106,7 +106,7 @@ Thuật toán là một đặc tả rõ ràng về cách giải quyết một l�
 * **Lưu đồ (Graphs)**
   * `B` [Depth-First Search](src/algorithms/graph/depth-first-search) (DFS)
   * `B` [Breadth-First Search](src/algorithms/graph/breadth-first-search) (BFS)
-  * `B` [Kruskal’s Algorithm](src/algorithms/graph/kruskal) - tìm cây bao trùm nhỏ nhất của một đồ thị vô hướng có trọng số.
+  * `B` [Kruskal’s Algorithm](src/algorithms/graph/kruskal) - tìm cây con nhỏ nhất của một đồ thị vô hướng có trọng số.
   * `A` [Dijkstra Algorithm](src/algorithms/graph/dijkstra) - tìm đường đi ngắn nhât của một đồ thị có hướng không trọng số.
   * `A` [Bellman-Ford Algorithm](src/algorithms/graph/bellman-ford) - tính các đường đi ngắn nhất trong một đồ thị có hướng có trọng số
   * `A` [Floyd-Warshall Algorithm](src/algorithms/graph/floyd-warshall) -  tìm đường đi ngắn nhât của một đồ thị có hướng dựa trên đỉnh trung gian.
@@ -152,7 +152,7 @@ Mô hình thuật toán là một phương pháp hoặc cách tiếp cận chung
   * `A` [Maximum Subarray](src/algorithms/sets/maximum-subarray)
   * `A` [Travelling Salesman Problem](src/algorithms/graph/travelling-salesman)
   * `A` [Discrete Fourier Transform](src/algorithms/math/fourier-transform) - biến đổi Fourier.
-* **Giải thuật tham lam** - chọn phương án tốt nhất tại thời điểm hiện tại mà không cần cân nhắc đến tương lai.
+* **Giải thuật tham lam** - chọn phương án tốt nhất tại thời điểm hiện tại mà không cần cân nhắc đến các lựa chọn khác trong tương lai.
   * `B` [Jump Game](src/algorithms/uncategorized/jump-game)
   * `A` [Unbound Knapsack Problem](src/algorithms/sets/knapsack-problem)
   * `A` [Dijkstra Algorithm](src/algorithms/graph/dijkstra) 
@@ -191,7 +191,7 @@ Mô hình thuật toán là một phương pháp hoặc cách tiếp cận chung
   * `A` [Bellman-Ford Algorithm](src/algorithms/graph/bellman-ford)
   * `A` [Floyd-Warshall Algorithm](src/algorithms/graph/floyd-warshall)
   * `A` [Regular Expression Matching](src/algorithms/string/regular-expression-matching)
-* **Giải thuật quay lùi** - tương tự brute force ta cũng tìm tất cấcc khả năng nhưng trong quá trình tìm kiếm, nếu ta gặp một hướng lựa chọn không thỏa mãn, ta quay lui về điểm lựa chọn nơi có các hướng khác và thử hướng lựa chọn tiếp theo. Khi đã thử hết các lựa chọn xuất phát từ điểm lựa chọn đó, ta quay lại điểm lựa chọn trước đó và thử hướng lựa chọn tiếp theo tại đó. Quá trình tìm kiếm thất bại khi không còn điểm lựa chọn nào nữa
+* **Giải thuật quay lùi** - tương tự brute force ta cũng tìm tất cả các khả năng nhưng trong quá trình tìm kiếm, nếu ta gặp một hướng lựa chọn không thỏa mãn, ta quay lui về điểm lựa chọn nơi có các hướng khác và thử hướng lựa chọn tiếp theo. Khi đã thử hết các lựa chọn xuất phát từ điểm lựa chọn đó, ta quay lại điểm lựa chọn trước đó và thử hướng lựa chọn tiếp theo tại đó. Quá trình tìm kiếm thất bại khi không còn điểm lựa chọn nào nữa
   * `B` [Jump Game](src/algorithms/uncategorized/jump-game)
   * `B` [Unique Paths](src/algorithms/uncategorized/unique-paths)
   * `B` [Power Set](src/algorithms/sets/power-set)

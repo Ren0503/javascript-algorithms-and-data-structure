@@ -4,7 +4,7 @@ Trong khoa học máy tính, **danh sách liên kết đôi** là cấu trúc d�
 
 ![Doubly Linked List](https://upload.wikimedia.org/wikipedia/commons/5/5e/Doubly-linked-list.svg)
 
-Hai nút liên kết cho phép duyệt danh sách theo một trong hai hướng. Trong khi việc thêm hoặc xóa một nút trong danh sách được liên kết đôi yêu cầu thay đổi nhiều liên kết hơn các hoạt động tương tự trên một danh sách được liên kết đơn lẻ, các hoạt động đơn giản hơn và có khả năng hiệu quả hơn (đối với các nút không phải là nút đầu tiên) vì không cần phải theo dõi nút trước đó trong quá trình duyệt hoặc không cần duyệt qua danh sách để tìm nút trước đó, để liên kết của nó có thể được sửa đổi. 
+Hai nút liên kết cho phép duyệt danh sách theo một trong hai hướng. Trong khi việc thêm hoặc xóa một nút trong danh sách được liên kết đôi yêu cầu thay đổi nhiều liên kết hơn các hoạt động tương tự trên một danh sách được liên kết đơn lẻ, thì các hoạt động khác đơn giản hơn và có hiệu quả hơn (đối với các nút không phải là nút đầu tiên) vì không cần phải theo dõi nút trước đó trong quá trình duyệt hoặc không cần duyệt qua danh sách để tìm nút trước đó, để liên kết của nó có thể được sửa đổi.
 
 ## Mã giả các hoạt động cơ bản
 
@@ -26,10 +26,10 @@ Add(value)
 end Add
 ```
 
-Diễn giải : Nếu danh sách rỗng thì nút thêm vào vừa là đầu vừa là cuối. Nếu không thì nút liên kết trước đó của n sẽ là tail và nút liên kết tiếp theo của tail sẽ là n. Đồng thời n sẽ là tail mới.
+Diễn giải : Nếu danh sách rỗng thì nút thêm vào vừa là head vừa là tail. Nếu không thì nút liên kết trước đó của n sẽ là tail và nút liên kết tiếp theo của tail sẽ là n. Đồng thời n sẽ là tail mới.
 
 ### Xoá
-* Input : head nút đầu tiên của danh sách và giá trị cần xoá
+* Input : head, nút đầu tiên của danh sách và giá trị cần xoá
 * Output: giá trị đã bị xoá khỏi danh sách trả về true còn không trả về false
 
 ```text
@@ -64,7 +64,7 @@ Remove(head, value)
 end Remove
 ```
 
-Diễn giải : Nếu danh sách rỗng, trả về false. Ngược lại thì tìm vị trí cần xoá, nếu nó ở head xét trường hợp head = tail tức danh sách một phần tử trả về danh sách rỗng, nếu không thì head sẽ bằng nút kế tiếp của head và lúc này nút liên kết trước đó của head bằng null. Nếu vị trí không phải head tiến hành duyệt danh sách, nếu vị trí ở tail thì tail sẽ bằng nút trước đó và nút liên kết tiếp theo của tail bằng null.
+Diễn giải : Nếu danh sách rỗng, trả về false. Ngược lại thì tìm vị trí cần xoá, nếu nó ở head xét trường hợp head = tail tức danh sách một phần tử trả về danh sách rỗng, nếu không thì head sẽ bằng nút kế tiếp của head và lúc này nút liên kết trước đó của head bằng null. Nếu vị trí cần xoá không phải head, tiến hành duyệt danh sách, nếu vị trí ở tail thì tail sẽ bằng nút trước đó và nút liên kết tiếp theo của tail bằng null.
 Trong trường hợp vị trí không phải head lẫn tail thì nút liên kết tiếp theo của nút trước đó (n.previouse.next) sẽ là nút liên kết tiếp theo của nút hiện tại (n.next). Đồng thời nút liên kết trước của nút tiếp theo (n.next.previous) sẽ là nút liên kết trước của nút hiện tại(n.previous). Như vậy nút hiên tại đã bị xoá khỏi danh sách.
 
 ### Duyệt Ngược
