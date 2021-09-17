@@ -1,13 +1,13 @@
 # Thao tác Bit
 
 ### Get bit 
-Phương thức này sẽ trả về giá trị của bit cuối cùng một số.
-Để thực hiện ta dịch chuyển bit của số đó không vị trí. Sau đó thực hiện thao tác `AND` với mẫu bit `0001`. Nó sẽ xoá những bit khác chi giữ lại bit cuối cùng của số. Nếu bit đấy là 1, sẽ trả về 1 ngược lại là 0.
+Phương thức này sẽ trả về giá trị bit cuối cùng của một số.
+Để thực hiện ta dịch chuyển bit của số đó không vị trí. Sau đó thực hiện thao tác `AND` với mẫu bit `0001`. Nó sẽ xoá những bit khác chi giữ lại bit cuối cùng của số đấy. Nếu bit đấy là 1, sẽ trả về 1 ngược lại thì trả về 0.
 
 > Xem [getBit.js](getBit.js) để hiểu chi tiết..
 
 ### Set bit
-Phương thức này đặt hoặc xóa một bit trong một số, mà không làm ảnh hưởng đến bất kỳ bit nào khác. Nó thực hiện bằng cách dịch chuyển `1` qua `bitPosition` vị trí, tạo ra một giá trị trông giống như `00100`. Sau đó, thực hiện thao tác `OR` biến bit cụ thể thành` 1` nhưng nó không ảnh hưởng đến các bit khác của số.
+Phương thức này đặt hoặc xóa một bit trong một số, mà không làm ảnh hưởng đến bất kỳ bit nào khác. Nó thực hiện bằng cách dịch chuyển `1` qua `bitPosition` vị trí, tạo ra một giá trị trông giống như `00100`. Sau đó, thực hiện thao tác `OR` biến bit cụ thể thành` 1` nhưng không làm ảnh hưởng đến các bit khác của số.
 
 > Xem [setBit.js](setBit.js) để hiểu chi tiết..
 
@@ -35,7 +35,7 @@ isEven: true
 > Xem [isEven.js](isEven.js) để hiểu chi tiết..
 
 ### Kiểm tra số âm
-Phương thức này xác định một số có phải là số âm không. Nó dựa trên việc số âm có ít bit `0` ở bên trái hơn. Tuy nhiên, nếu số đưa vào là số 0, nó sẽ trả về `false`.
+Phương thức này xác định một số có phải là số âm không. Nó dựa trên việc số âm có ít bit `0` ở bên trái hơn. Lưu ý, nếu số đưa vào là số 0, nó sẽ trả về `false`.
 
 ```text
 Number: 1 = 0b0001
@@ -78,7 +78,7 @@ Luỹ thừa hai: 0 + 0 + 2^1 + 0
 > Xem [divideByTwo.js](divideByTwo.js) để hiểu chi tiết..
 
 ### Đảo dấu
-Phương thức này đảo dấu của các số, tức là biến số dường thành âm và ngược lại. Nó làm điều này bằng phương pháp "Two Complement" thực hiện đảo ngược tất cả bit của số và thêm 1 vào đó.
+Phương thức này đảo dấu của các số, tức là biến số dương thành âm và ngược lại. Nó làm điều này bằng phương pháp "Bù Hai" thực hiện đảo ngược tất cả bit của số và thêm 1 vào đó.
 
 ```
 1101 -3
@@ -121,7 +121,7 @@ Khi ta thực hiện phép nhân `x` với `19`, nó tương đương:
 x * 19 = x * 2^4 + x * 2^1 + x * 2^0
 ```
 
-Bây giờ chúng ta cần nhớ rằng `x * 2^4` tương đương với việc dịch chuyển `x` sang trái bởi `4` bit (`x << 4`).
+Bây giờ chúng ta cần nhớ rằng `x * 2^4` tương đương với việc dịch chuyển `x` sang trái `4` bit (`x << 4`).
 
 > Xem [multiplyUnsigned.js](multiplyUnsigned.js) để hiểu chi tiết..
 
@@ -159,7 +159,7 @@ Khi chúng ta dịch chuyển 1 bit sang trái 4 lần nó sẽ lớn hơn 5.
 
 ### Là luỹ thừa của hai
 Phương thức này kiểm tra một số được cung cấp có phải luỹ thừa của hai không. Nó sử dụng thuộc tính sau :
-Gọi `powerNumber` là một số thuộc luỹ thừa của hai (2, 4, 8, 16, ...). Khi chúng ta thực hiện thao tác `&` với `powerNumber` và `powerNumber - 1` nó sẽ trả về 0 (trong trường hợp đấy là luỹ thừa của hai).
+Gọi `powerNumber` là một số thuộc luỹ thừa của hai (2, 4, 8, 16, ...). Khi chúng ta thực hiện thao tác `&` giữa `powerNumber` và `powerNumber - 1` nó sẽ trả về 0 (trong trường hợp đấy là luỹ thừa của hai).
 
 ```
 Number: 4 = 0b0100

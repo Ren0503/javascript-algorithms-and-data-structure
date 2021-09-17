@@ -46,7 +46,7 @@ Thuật toán là một đặc tả rõ ràng về cách giải quyết một l�
   * `B` [Factorial](src/algorithms/math/factorial)
   * `B` [Fibonacci Number](src/algorithms/math/fibonacci) - dạng cổ điển và dạng đóng
   * `B` [Prime Factors](src/algorithms/math/prime-factors) - tìm thừa số nguyên tố và đếm chúng bằng định lý Hardy-Ramanujan.
-  * `B` [Primality Test](src/algorithms/math/primality-test) (phương pháp phân chia thử nghiệm)
+  * `B` [Primality Test](src/algorithms/math/primality-test) (kiểm tra nguyên hàm)
   * `B` [Euclidean Algorithm](src/algorithms/math/euclidean-algorithm) - tìm ước số chung lớn nhất (GCD)
   * `B` [Least Common Multiple](src/algorithms/math/least-common-multiple) - tìm bội số chung nhỏ nhất (LCM)
   * `B` [Sieve of Eratosthenes](src/algorithms/math/sieve-of-eratosthenes) - tìm tất cả số nguyên tố trong giới hạn được cho.
@@ -62,7 +62,7 @@ Thuật toán là một đặc tả rõ ràng về cách giải quyết một l�
   * `A` [Square Root](src/algorithms/math/square-root) - phương thức Newton.
   * `A` [Liu Hui π Algorithm](src/algorithms/math/liu-hui) - tính gần đúng π dựa trên N-gons
   * `A` [Discrete Fourier Transform](src/algorithms/math/fourier-transform) - phép biến đổi Fourier.
-* **Thiết lập (Sets)**
+* **Tập hợp (Sets)**
   * `B` [Cartesian Product](src/algorithms/sets/cartesian-product) - tích Descartes.
   * `B` [Fisher–Yates Shuffle](src/algorithms/sets/fisher-yates) - thuật toán ngẫu nhiên không trùng.
   * `A` [Power Set](src/algorithms/sets/power-set) - tất cả các tập hợp con của một tập hợp (dùng phương pháp quay lùi)

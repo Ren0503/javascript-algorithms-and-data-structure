@@ -1,6 +1,6 @@
 # Giai thừa
 
-Trong toán học, gia thừa của một số nguyên không âm `n` được ký hiệu là `n!`, có giá trị bằng tích các số nguyên dương nhỏ hơn hoặc bằng `n`. Ví dụ :
+Trong toán học, giai thừa của một số nguyên không âm `n` được ký hiệu là `n!`, có giá trị bằng tích các số nguyên dương nhỏ hơn hoặc bằng `n`. Ví dụ :
 
 ```
 5! = 5 * 4 * 3 * 2 * 1 = 120

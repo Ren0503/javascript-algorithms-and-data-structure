@@ -27,7 +27,7 @@ Số phức có thể biểu diễn trực quan dưới dạng cặp số `(a, b
 
 ## Biểu diễn
 
-Một cách khác để xác định điểm `P` trong mặt phẳng phức, ngoài việc sử dụng tọa độ x và y, là sử dụng khoảng cách tới điểm `O`, điểm có tọa độ là `(0, 0)` (gốc tọa độ), cùng với góc nhọn giữa trục `Ox` và đoạn thẳng `OP` theo hướng ngược chiều kim đồng hồ. Ý tưởng này giúp biểu diện toạ độ của số phức.
+Một cách khác để xác định điểm `P` trong mặt phẳng phức, ngoài việc sử dụng tọa độ x và y, là sử dụng khoảng cách tới điểm `O`, điểm có tọa độ là `(0, 0)` (gốc tọa độ), cùng với góc nhọn giữa trục `Ox` và đoạn thẳng `OP` theo hướng ngược chiều kim đồng hồ. Ý tưởng này cũng giúp biểu diễn toạ độ của số phức.
 
 ![Polar Form](https://upload.wikimedia.org/wikipedia/commons/7/7a/Complex_number_illustration_modarg.svg)
 
@@ -39,11 +39,11 @@ _Giá trị tuyệt đối_ (hay độ lớn hoặc mô đun) của số phức 
 
 ![Phase](https://wikimedia.org/api/rest_v1/media/math/render/svg/7cbbdd9bb1dd5df86dd2b820b20f82995023e566)
 
-Cùng với nhau, `r` và` φ` đưa ra một cách khác để biểu diễn số phức, dạng cực, như một sự kết hợp giữa mô đun và pha đầy đủ của  vì sự kết hợp của môđun và đối số xác định đầy đủ vị trí của một điểm trên mặt phẳng. Việc khôi phục tọa độ ban đầu của hình chữ nhật từ dạng cực được thực hiện bằng công thức gọi là dạng lượng giác:
+Cùng với nhau, `r` và` φ` đưa ra một cách khác để biểu diễn số phức, dạng lượng giác, đây là sự kết hợp giữa mô đun và pha để biểu diễn đầy đủ vị trí trên mặt phẳng phức. Việc khôi phục tọa độ ban đầu của hình chữ nhật từ dạng cực được thực hiện bằng công thức gọi là dạng lượng giác:
 
 ![Polar Form](https://wikimedia.org/api/rest_v1/media/math/render/svg/b03de1e1b7b049880b5e4870b68a57bc180ff6ce)
 
-Sử dụng công thức Euler's có thể viết như sau :
+Sử dụng công thức Euler có thể viết như sau :
 
 ![Euler's Form](https://wikimedia.org/api/rest_v1/media/math/render/svg/0a087c772212e7375cb321d83fc1fcc715cd0ed2)
 
@@ -121,7 +121,7 @@ Phép nhân sẽ có dạng :
 Liên hợp của một số là khi ta thay đổi dấu ở phần ảo của số đấy như thế này :
 ![Complex Conjugate](https://www.mathsisfun.com/numbers/images/complex-conjugate.svg)
 
-Một liên hợp thường được viết như sau :
+Một liên hợp thường được ký hiệu gạch ngang trên đầu :
 
 ```text
 ______
