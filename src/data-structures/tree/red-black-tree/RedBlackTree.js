@@ -1,6 +1,6 @@
 import BinarySearchTree from '../binary-search-tree/BinarySearchTree';
 
-// Màu có thể của cây đỏ đen.
+// Màu của cây đỏ đen.
 const RED_BLACK_TREE_COLORS = {
     red: 'red',
     black: 'black',
