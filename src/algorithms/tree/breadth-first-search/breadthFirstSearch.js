@@ -3,7 +3,7 @@ import Queue from '../../../data-structures/queue/Queue';
 /**
  * @typedef {Object} Callbacks
  * @property {function(node: BinaryTreeNode, child: BinaryTreeNode): boolean} allowTraversal -
- * Xác định xem BFS có nên truyền từ nút đến nút con của nó hay không.
+ * Xác định xem có nên duyệt BFS từ nút đến nút con của nó hay không.
  * @property {function(node: BinaryTreeNode)} enterNode - Được gọi khi BFS đi vào nút.
  * @property {function(node: BinaryTreeNode)} leaveNode - Được gọi khi BFS rời khỏi nút..
  */

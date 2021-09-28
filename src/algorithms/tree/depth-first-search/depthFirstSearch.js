@@ -2,7 +2,7 @@
  * @typedef {Object} TraversalCallbacks
  *
  * @property {function(node: BinaryTreeNode, child: BinaryTreeNode): boolean} allowTraversal
- * - Xác định xem DFS có nên truyền từ nút đến nút con của nó hay không.
+ * - Xác định xem có nên duyệt DFS từ nút đến nút con của nó hay không.
  *
  * @property {function(node: BinaryTreeNode)} enterNode - Được gọi khi DFS đi vào nút..
  *
