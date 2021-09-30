@@ -1,10 +1,12 @@
 # Shell Sort
 
-Shell Sort còn gọi là phương thức Shell là loại sắp xếp so sánh tại chỗ. Nó có thể được xem là tổng quát của sắp xếp nổi bọt (bubble sort) hoặc sắp xếp chèn (insertion sort). Giải thuật này tránh các trường hợp phải hoán đổi vị trí của hai phần tử xa nhau trong giải thuật sắp xếp chọn. Phương pháp bắt đầu bằng cách sắp xếp các cặp phần tử cách xa nhau, sau đó giảm dần khoảng cách giữa các phần tử được so sánh. Bắt đầu với các phần tử xa nhau, nó có thể di chuyển một số phần tử không đúng vị trí vào vị trí nhanh hơn so với hoán đổi các phần tử liền kề.
+Shell Sort còn gọi là phương thức Shell là loại sắp xếp so sánh tại chỗ. Nó có thể được xem là tổng quát của sắp xếp nổi bọt (bubble sort) hoặc sắp xếp chèn (insertion sort). Giải thuật này tránh các trường hợp phải tráo đổi vị trí của hai phần tử xa nhau trong giải thuật sắp xếp chọn (nếu như phần tử nhỏ hơn ở vị trí bên phải khá xa so với phần tử lớn hơn bên trái).
 
 ![Shellsort](https://upload.wikimedia.org/wikipedia/commons/d/d8/Sorting_shellsort_anim.gif)
 
 ## Hoạt động
+
+Khi bắt đầu, giải thuật này sử dụng giải thuật sắp xếp chọn trên các phần tử có khoảng cách xa nhau, sau đó sắp xếp các phần tử có khoảng cách hẹp hơn. Khoảng cách này còn được gọi là **khoảng (interval)**.
 
 Lấy ví dụ dễ hiểu, ta lấy một khoảng là `4`. Tạo một danh sách con ảo gồm tất cả các giá trị nằm trong khoảng 4 vị trí. Ở đây các giá trị này là `{35, 14}`, `{33, 19}`, `{42, 27}` và `{10, 44}`.
 

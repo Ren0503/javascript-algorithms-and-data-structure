@@ -8,7 +8,7 @@ export default class ShellSort extends Sort {
         // Xác định khoảng cách gap.
         let gap = Math.floor(array.length / 2);
 
-        // Khi gap lớn hơn thì 0 thực hiện so sánh và hoán đổi các phần tử.
+        // Khi gap lớn hơn 0 thì thực hiện so sánh và hoán đổi các phần tử.
         while (gap > 0) {
             // Đi đến và so sánh tất cả các cặp phần tử ở xa.
             for (let i = 0; i < (array.length - gap); i += 1) {

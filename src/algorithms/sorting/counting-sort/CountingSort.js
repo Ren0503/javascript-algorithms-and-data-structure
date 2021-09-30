@@ -7,7 +7,7 @@ export default class CountingSort extends Sort {
      * @param {number} [biggestElement]
      */
     sort(originalArray, smallestElement = undefined, biggestElement = undefined) {
-        // Khởi tạo phần tử lớn nhất và nhỏ nhất trong mảng để xây dựng mảng bucker số sau này.
+        // Khởi tạo phần tử lớn nhất và nhỏ nhất trong mảng để xây dựng mảng bucker sau này.
         let detectedSmallestElement = smallestElement || 0;
         let detectedBiggestElement = biggestElement || 0;
 
@@ -29,7 +29,7 @@ export default class CountingSort extends Sort {
         }
 
         // Khởi tạo mảng bucket.
-        // Mảng này sẽ giữ tần suất của mỗi số từ originalArray.
+        // Mảng này sẽ giữ tần số của mỗi số từ originalArray.
         const buckets = Array(detectedBiggestElement - detectedSmallestElement + 1).fill(0);
 
         originalArray.forEach((element) => {
@@ -39,40 +39,40 @@ export default class CountingSort extends Sort {
             buckets[element - detectedSmallestElement] += 1;
         });
 
-        // Add previous frequencies to the current one for each number in bucket
-        // to detect how many numbers less then current one should be standing to
-        // the left of current one.
+        // Thêm tần số trước đó vào tần số hiện tại cho mỗi số trong bucket
+        // để phát hiện có bao nhiêu số nhỏ hơn số hiện tại thì chúng sẽ đứng
+        // bên trái của số hiện tại.
         for (let bucketIndex = 1; bucketIndex < buckets.length; bucketIndex += 1) {
             buckets[bucketIndex] += buckets[bucketIndex - 1];
         }
 
-        // Now let's shift frequencies to the right so that they show correct numbers.
-        // I.e. if we won't shift right than the value of buckets[5] will display how many
-        // elements less than 5 should be placed to the left of 5 in sorted array
-        // INCLUDING 5th. After shifting though this number will not include 5th anymore.
+        // Giờ ta hãy chuyển các tần số sang bên phải để chúng hiển thị các số chính xác.
+        // Vd: nếu ta không dịch chuyển sang phải, thì các giá trị của buckets[5] sẽ hiển thị 
+        // số phần tử nhỏ hơn 5 được đặt bên trái của 5 trong mảng đã sắp xếp KỂ CẢ 5
+        // Sau khi dịch chuyển, con số này sẽ không bao gồm 5 nữa.
         buckets.pop();
         buckets.unshift(0);
 
-        // Now let's assemble sorted array.
+        // Bây giờ ta sẽ sắp xếp mảng.
         const sortedArray = Array(originalArray.length).fill(null);
         for (let elementIndex = 0; elementIndex < originalArray.length; elementIndex += 1) {
-            // Get the element that we want to put into correct sorted position.
+            // Lấy phần tử mà ta muốn đặt vào đúng vị trí đã sắp xếp.
             const element = originalArray[elementIndex];
 
-            // Visit element.
+            // Truy cập phần tử.
             this.callbacks.visitingCallback(element);
 
-            // Get correct position of this element in sorted array.
+            // Lấy vị trí đúng của phần tử trong mảng đã sắp xếp.
             const elementSortedPosition = buckets[element - detectedSmallestElement];
 
-            // Put element into correct position in sorted array.
+            // Đặt phần tử vào vị trí đúng trong mảng đã sắp xếp
             sortedArray[elementSortedPosition] = element;
 
-            // Increase position of current element in the bucket for future correct placements.
+            // Tăng vị trí của phần tử hiện tại trong bucket cho các vị trí đúng trong tương lai.
             buckets[element - detectedSmallestElement] += 1;
         }
 
-        // Return sorted array.
+        // Trả về mảng đã sắp xếp.
         return sortedArray;
     }
 }
