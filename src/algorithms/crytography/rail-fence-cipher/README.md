@@ -22,7 +22,7 @@ W . . . E . . . C . . . R . . . L . . . T . . . E
 . . - . . . - . . . - . . . - . . . - . . . - . .
 ```
 
-Đã đến lúc bắt đầu điền vào đường ray tiếp theo khi số lượng vị trí hàng rào được truy cập bằng số ký tự trong thông điệp.
+Khi bắt đầu điền vào đường ray tiếp theo khi số lượng vị trí hàng rào được truy cập bằng số ký tự trong thông điệp.
 
 ## Liên kết
 
