@@ -131,15 +131,15 @@ Thuật toán là một đặc tả rõ ràng về cách giải quyết một l�
 * **Xứ lý hình ảnh**
   * `B` [Seam Carving](src/algorithms/image-processing/seam-carving) - thuật toán thay đổi kích thước hình ảnh.
 * **Khác**
-  * `B` [Tower of Hanoi](src/algorithms/uncategorized/hanoi-tower) - bài toán tháp Hà Nội.
-  * `B` [Square Matrix Rotation](src/algorithms/uncategorized/square-matrix-rotation) 
-  * `B` [Jump Game](src/algorithms/uncategorized/jump-game) - ví dụ về giải thuât quay lùi, tham lam và quy hoạch động.
-  * `B` [Unique Paths](src/algorithms/uncategorized/unique-paths) - ví dụ về giải thuật quay lùi, quy hoạch động và tam giác Pascal.
-  * `B` [Rain Terraces](src/algorithms/uncategorized/rain-terraces) - 
-  * `B` [Recursive Staircase](src/algorithms/uncategorized/recursive-staircase) - đếm số cách đi hết cầu thang (4 giải pháp)
-  * `B` [Best Time To Buy Sell Stocks](src/algorithms/uncategorized/best-time-to-buy-sell-stocks) - ví dụ về chia để trị.
-  * `A` [N-Queens Problem](src/algorithms/uncategorized/n-queens) - bài toán N quân hậu.
-  * `A` [Knight's Tour](src/algorithms/uncategorized/knight-tour) - bài toán ngựa đi đường.
+  * `B` [Tower of Hanoi](src/algorithms/others/hanoi-tower) - bài toán tháp Hà Nội.
+  * `B` [Square Matrix Rotation](src/algorithms/others/square-matrix-rotation) 
+  * `B` [Jump Game](src/algorithms/others/jump-game) - ví dụ về giải thuât quay lùi, tham lam và quy hoạch động.
+  * `B` [Unique Paths](src/algorithms/others/unique-paths) - ví dụ về giải thuật quay lùi, quy hoạch động và tam giác Pascal.
+  * `B` [Rain Terraces](src/algorithms/others/rain-terraces) - 
+  * `B` [Recursive Staircase](src/algorithms/others/recursive-staircase) - đếm số cách đi hết cầu thang (4 giải pháp)
+  * `B` [Best Time To Buy Sell Stocks](src/algorithms/others/best-time-to-buy-sell-stocks) - ví dụ về chia để trị.
+  * `A` [N-Queens Problem](src/algorithms/others/n-queens) - bài toán N quân hậu.
+  * `A` [Knight's Tour](src/algorithms/others/knight-tour) - bài toán ngựa đi đường.
 
 ### Algorithms by Paradigm
 
