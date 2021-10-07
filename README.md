@@ -147,20 +147,20 @@ Mô hình thuật toán là một phương pháp hoặc cách tiếp cận chung
 
 * **Phá mã Brute Force** - xem xét tất cả các khả năng và chọn giải pháp tốt nhất
   * `B` [Linear Search](src/algorithms/search/linear-search)
-  * `B` [Rain Terraces](src/algorithms/uncategorized/rain-terraces) 
-  * `B` [Recursive Staircase](src/algorithms/uncategorized/recursive-staircase) 
+  * `B` [Rain Terraces](src/algorithms/others/rain-terraces) 
+  * `B` [Recursive Staircase](src/algorithms/others/recursive-staircase) 
   * `A` [Maximum Subarray](src/algorithms/sets/maximum-subarray)
   * `A` [Travelling Salesman Problem](src/algorithms/graph/travelling-salesman)
   * `A` [Discrete Fourier Transform](src/algorithms/math/fourier-transform) - biến đổi Fourier.
 * **Giải thuật tham lam** - chọn phương án tốt nhất tại thời điểm hiện tại mà không cần cân nhắc đến các lựa chọn khác trong tương lai.
-  * `B` [Jump Game](src/algorithms/uncategorized/jump-game)
+  * `B` [Jump Game](src/algorithms/others/jump-game)
   * `A` [Unbound Knapsack Problem](src/algorithms/sets/knapsack-problem)
   * `A` [Dijkstra Algorithm](src/algorithms/graph/dijkstra) 
   * `A` [Prim’s Algorithm](src/algorithms/graph/prim)
   * `A` [Kruskal’s Algorithm](src/algorithms/graph/kruskal)
 * **Giải thuật chia để trị** - chia nhỏ vấn đề và giải quyết các phần nhỏ đấy.
   * `B` [Binary Search](src/algorithms/search/binary-search)
-  * `B` [Tower of Hanoi](src/algorithms/uncategorized/hanoi-tower)
+  * `B` [Tower of Hanoi](src/algorithms/others/hanoi-tower)
   * `B` [Pascal's Triangle](src/algorithms/math/pascal-triangle)
   * `B` [Euclidean Algorithm](src/algorithms/math/euclidean-algorithm) 
   * `B` [Merge Sort](src/algorithms/sorting/merge-sort)
@@ -168,17 +168,17 @@ Mô hình thuật toán là một phương pháp hoặc cách tiếp cận chung
   * `B` [Tree Depth-First Search](src/algorithms/tree/depth-first-search) (DFS)
   * `B` [Graph Depth-First Search](src/algorithms/graph/depth-first-search) (DFS)
   * `B` [Matrices](src/algorithms/math/matrix) -tạo và duyệt các ma trận có hình dạng khác nhau.
-  * `B` [Jump Game](src/algorithms/uncategorized/jump-game)
+  * `B` [Jump Game](src/algorithms/others/jump-game)
   * `B` [Fast Powering](src/algorithms/math/fast-powering)
-  * `B` [Best Time To Buy Sell Stocks](src/algorithms/uncategorized/best-time-to-buy-sell-stocks)
+  * `B` [Best Time To Buy Sell Stocks](src/algorithms/others/best-time-to-buy-sell-stocks)
   * `A` [Permutations](src/algorithms/sets/permutations) 
   * `A` [Combinations](src/algorithms/sets/combinations) 
 * **Quy hoạch động** - xây dựng một giải pháp bằng cách sử dụng các giải pháp phụ đã tìm thấy trước đây.
   * `B` [Fibonacci Number](src/algorithms/math/fibonacci)
-  * `B` [Jump Game](src/algorithms/uncategorized/jump-game)
-  * `B` [Unique Paths](src/algorithms/uncategorized/unique-paths)
-  * `B` [Rain Terraces](src/algorithms/uncategorized/rain-terraces) 
-  * `B` [Recursive Staircase](src/algorithms/uncategorized/recursive-staircase)
+  * `B` [Jump Game](src/algorithms/others/jump-game)
+  * `B` [Unique Paths](src/algorithms/others/unique-paths)
+  * `B` [Rain Terraces](src/algorithms/others/rain-terraces) 
+  * `B` [Recursive Staircase](src/algorithms/others/recursive-staircase)
   * `B` [Seam Carving](src/algorithms/image-processing/seam-carving) - 
   * `A` [Levenshtein Distance](src/algorithms/string/levenshtein-distance)
   * `A` [Longest Common Subsequence](src/algorithms/sets/longest-common-subsequence) (LCS)
@@ -192,12 +192,12 @@ Mô hình thuật toán là một phương pháp hoặc cách tiếp cận chung
   * `A` [Floyd-Warshall Algorithm](src/algorithms/graph/floyd-warshall)
   * `A` [Regular Expression Matching](src/algorithms/string/regular-expression-matching)
 * **Giải thuật quay lùi** - tương tự brute force ta cũng tìm tất cả các khả năng nhưng trong quá trình tìm kiếm, nếu ta gặp một hướng lựa chọn không thỏa mãn, ta quay lui về điểm lựa chọn nơi có các hướng khác và thử hướng lựa chọn tiếp theo. Khi đã thử hết các lựa chọn xuất phát từ điểm lựa chọn đó, ta quay lại điểm lựa chọn trước đó và thử hướng lựa chọn tiếp theo tại đó. Quá trình tìm kiếm thất bại khi không còn điểm lựa chọn nào nữa
-  * `B` [Jump Game](src/algorithms/uncategorized/jump-game)
-  * `B` [Unique Paths](src/algorithms/uncategorized/unique-paths)
+  * `B` [Jump Game](src/algorithms/others/jump-game)
+  * `B` [Unique Paths](src/algorithms/others/unique-paths)
   * `B` [Power Set](src/algorithms/sets/power-set)
   * `A` [Hamiltonian Cycle](src/algorithms/graph/hamiltonian-cycle) 
-  * `A` [N-Queens Problem](src/algorithms/uncategorized/n-queens)
-  * `A` [Knight's Tour](src/algorithms/uncategorized/knight-tour)
+  * `A` [N-Queens Problem](src/algorithms/others/n-queens)
+  * `A` [Knight's Tour](src/algorithms/others/knight-tour)
   * `A` [Combination Sum](src/algorithms/sets/combination-sum) 
 * **Giải thuật nhánh cận** - ghi nhớ giải pháp chi phí thấp nhất được tìm thấy ở mỗi giai đoạn của tìm kiếm quay lùi, và sử dụng chi phí của giải pháp chi phí thấp nhất được tìm thấy như là một ràng buộc thấp hơn về chi phí của một giải pháp chi phí thấp nhất cho vấn đề, để loại bỏ các giải pháp với chi phí lớn hơn giải pháp chi phí thấp nhất được tìm thấy cho đến nay. 
 
