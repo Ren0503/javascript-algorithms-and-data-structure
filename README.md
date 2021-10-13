@@ -33,7 +33,7 @@ Cấu trúc dữ liệu là một phương thức tổ chức và lưu trữ d�
 
 ## Giải thuật
 
-Thuật toán là một đặc tả rõ ràng về cách giải quyết một lớp vấn đề. Nó là một tập hợp các quy tắc xác định chính xác một chuỗi hoạt động.
+Giải thuật hay thuật toán là một đặc tả rõ ràng về cách giải quyết một vấn đề. Nó là một tập hợp các quy tắc xác định chính xác một chuỗi hoạt động.
 
 `B` - Beginner (Cơ bản), `A` - Advanced (Nâng cao)
 
@@ -113,7 +113,7 @@ Thuật toán là một đặc tả rõ ràng về cách giải quyết một l�
   * `A` [Detect Cycle](src/algorithms/graph/detect-cycle) - cho cả đồ thị có hướng và vô hướng (DFS and Disjoint Set based versions)
   * `A` [Prim’s Algorithm](src/algorithms/graph/prim) - giống thuật toán Kruskal's.
   * `A` [Topological Sorting](src/algorithms/graph/topological-sorting) - phương thức DFS.
-  * `A` [Articulation Points](src/algorithms/graph/articulation-points) - Tarjan's algorithm (DFS based)
+  * `A` [Articulation Points](src/algorithms/graph/articulation-points) - thuật toán của Tarjan(dựa trên DFS)
   * `A` [Bridges](src/algorithms/graph/bridges)
   * `A` [Eulerian Path and Eulerian Circuit](src/algorithms/graph/eulerian-path) - giải thuật Fleury
   * `A` [Hamiltonian Cycle](src/algorithms/graph/hamiltonian-cycle) - Đi qua mọi đỉnh chính xác một lần.
@@ -141,7 +141,7 @@ Thuật toán là một đặc tả rõ ràng về cách giải quyết một l�
   * `A` [N-Queens Problem](src/algorithms/others/n-queens) - bài toán N quân hậu.
   * `A` [Knight's Tour](src/algorithms/others/knight-tour) - bài toán ngựa đi đường.
 
-### Algorithms by Paradigm
+### Mô hình thuật toán
 
 Mô hình thuật toán là một phương pháp hoặc cách tiếp cận chung làm cơ sở cho việc thiết kế một lớp thuật toán. Nó là một sự trừu tượng cao hơn khái niệm về một thuật toán, cũng giống như một thuật toán là sự trừu tượng cao hơn một chương trình máy tính.
 
@@ -203,7 +203,7 @@ Mô hình thuật toán là một phương pháp hoặc cách tiếp cận chung
 
 ### Ký hiệu O lớn
 
-*Big O notation* được sử dụng để phân loại các thuật toán theo cách thời gian chạy hoặc yêu cầu không gian của chúng phát triển khi kích thước đầu vào tăng lên.
+*Ký hiệu O* được sử dụng để phân loại các thuật toán theo cách thời gian chạy hoặc yêu cầu không gian của chúng phát triển khi kích thước đầu vào tăng lên.
 Trên biểu đồ dưới đây, bạn có thể tìm thấy hầu hết các thứ tự tăng trưởng phổ biến của các thuật toán được chỉ định trong ký hiệu Big O.
 
 ![Big O graphs](./assets/big-o-graph.png)
