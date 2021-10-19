@@ -33,10 +33,9 @@ Cấu trúc dữ liệu là một phương thức tổ chức và lưu trữ d�
 
 ## Giải thuật
 
-Giải thuật hay thuật toán là một đặc tả rõ ràng về cách giải quyết một vấn đề. Nó là một tập hợp các quy tắc xác định chính xác một chuỗi hoạt động.
+Giải thuật hay thuật toán là một tập hợp hữu hạn các hướng dẫn được xác định rõ ràng, có thể thực hiện được bằng máy tính, thường để giải quyết một lớp vấn đề hoặc để thực hiện một phép tính.
 
 `B` - Beginner (Cơ bản), `A` - Advanced (Nâng cao)
-
 
 ### Algorithms by Topic
 
@@ -158,7 +157,7 @@ Mô hình thuật toán là một phương pháp hoặc cách tiếp cận chung
   * `A` [Dijkstra Algorithm](src/algorithms/graph/dijkstra) 
   * `A` [Prim’s Algorithm](src/algorithms/graph/prim)
   * `A` [Kruskal’s Algorithm](src/algorithms/graph/kruskal)
-* **Giải thuật chia để trị** - chia nhỏ vấn đề và giải quyết các phần nhỏ đấy.
+* **Giải thuật chia để trị** - chia nhỏ vấn đề và giải quyết các vấn đề nhỏ đấy.
   * `B` [Binary Search](src/algorithms/search/binary-search)
   * `B` [Tower of Hanoi](src/algorithms/others/hanoi-tower)
   * `B` [Pascal's Triangle](src/algorithms/math/pascal-triangle)
@@ -191,7 +190,7 @@ Mô hình thuật toán là một phương pháp hoặc cách tiếp cận chung
   * `A` [Bellman-Ford Algorithm](src/algorithms/graph/bellman-ford)
   * `A` [Floyd-Warshall Algorithm](src/algorithms/graph/floyd-warshall)
   * `A` [Regular Expression Matching](src/algorithms/string/regular-expression-matching)
-* **Giải thuật quay lùi** - tương tự brute force ta cũng tìm tất cả các khả năng nhưng trong quá trình tìm kiếm, nếu ta gặp một hướng lựa chọn không thỏa mãn, ta quay lui về điểm lựa chọn nơi có các hướng khác và thử hướng lựa chọn tiếp theo. Khi đã thử hết các lựa chọn xuất phát từ điểm lựa chọn đó, ta quay lại điểm lựa chọn trước đó và thử hướng lựa chọn tiếp theo tại đó. Quá trình tìm kiếm thất bại khi không còn điểm lựa chọn nào nữa
+* **Giải thuật quay lùi** - tương tự brute force ta cũng tìm tất cả các khả năng nhưng trong quá trình tìm kiếm, nếu ta gặp một hướng lựa chọn không thỏa mãn, ta quay lùi về điểm lựa chọn nơi có các hướng khác và thử hướng lựa chọn tiếp theo. Khi đã thử hết các lựa chọn xuất phát từ điểm lựa chọn đó, ta quay lại điểm lựa chọn trước đó và thử hướng lựa chọn tiếp theo tại đấy. Quá trình tìm kiếm thất bại khi không còn điểm lựa chọn nào nữa.
   * `B` [Jump Game](src/algorithms/others/jump-game)
   * `B` [Unique Paths](src/algorithms/others/unique-paths)
   * `B` [Power Set](src/algorithms/sets/power-set)
@@ -199,12 +198,12 @@ Mô hình thuật toán là một phương pháp hoặc cách tiếp cận chung
   * `A` [N-Queens Problem](src/algorithms/others/n-queens)
   * `A` [Knight's Tour](src/algorithms/others/knight-tour)
   * `A` [Combination Sum](src/algorithms/sets/combination-sum) 
-* **Giải thuật nhánh cận** - ghi nhớ giải pháp chi phí thấp nhất được tìm thấy ở mỗi giai đoạn của tìm kiếm quay lùi, và sử dụng chi phí của giải pháp chi phí thấp nhất được tìm thấy như là một ràng buộc thấp hơn về chi phí của một giải pháp chi phí thấp nhất cho vấn đề, để loại bỏ các giải pháp với chi phí lớn hơn giải pháp chi phí thấp nhất được tìm thấy cho đến nay. 
+* **Giải thuật nhánh cận** - ghi nhớ chi phí thấp nhất được tìm thấy ở các giải pháp của giải thuật quay lùi, và sự dụng chi phí đấy như là một ràng buộc để loại bỏ các giải pháp có chi phí lớn hơn. Nói các khác giải thuật nhánh cận là tối ưu của giải thuật quay lùi.
 
 ### Ký hiệu O lớn
 
-*Ký hiệu O* được sử dụng để phân loại các thuật toán theo cách thời gian chạy hoặc yêu cầu không gian của chúng phát triển khi kích thước đầu vào tăng lên.
-Trên biểu đồ dưới đây, bạn có thể tìm thấy hầu hết các thứ tự tăng trưởng phổ biến của các thuật toán được chỉ định trong ký hiệu Big O.
+*Ký hiệu O* được sử dụng để phân loại các thuật toán theo cách thời gian thực thi hoặc yêu cầu không gian bổ sung của chúng.
+Trong biểu đồ dưới đây, bạn có thể thấy thứ tự phát triển của hầu hết các thuật toán phổ biến được chỉ định trong ký hiệu Big O.
 
 ![Big O graphs](./assets/big-o-graph.png)
 
