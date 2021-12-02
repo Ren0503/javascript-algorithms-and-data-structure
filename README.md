@@ -75,7 +75,7 @@ Giải thuật hay thuật toán là một tập hợp hữu hạn các hướng
   * `A` [Combination Sum](src/algorithms/sets/combination-sum) (Pending)
 * **Chuỗi (Strings)**
   * `B` [Hamming Distance](src/algorithms/string/hamming-distance) - khoảng cách Hamming
-  * `A` [Levenshtein Distance](src/algorithms/string/levenshtein-distance) - khoảng cách Levenshtein(Pending)
+  * `A` [Levenshtein Distance](src/algorithms/string/levenshtein-distance) - khoảng cách Levenshtein
   * `A` [Knuth–Morris–Pratt Algorithm](src/algorithms/string/knuth-morris-pratt) (Thuật toán KMP) - tìm kiếm chuỗi con (so sánh mẫu)(Pending)
   * `A` [Z Algorithm](src/algorithms/string/z-algorithm) - tìm kiếm chuỗi con (so sánh mẫu)(Pending)
   * `A` [Rabin Karp Algorithm](src/algorithms/string/rabin-karp) - tìm kiếm chuỗi con(Pending)
